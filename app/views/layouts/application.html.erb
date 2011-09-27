@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Alpha</title>
+  <title> <%= @titulo %> </title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div><%=yield :menu%> estoy dentro de un div</div>
 
 
 <%= yield %>

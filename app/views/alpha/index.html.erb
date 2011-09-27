@@ -1,6 +1,6 @@
 <h1>Alpha</h1>
 <%= enlace "LiNk", "beta", "index" %>
-<canvas id="demoCanvas" width="300" height="150"></canvas>
+<canvas id="demoCanvas" width="1200" height="450"></canvas>
 <script type="text/javascript">
 var canvas, graphics;
 function draw_init() {
@@ -12,8 +12,8 @@ function draw_init() {
 }
 function draw() {
 	var theme = ["#10444B","#25AB00","#4AA684","#E2F0E6","#16FFE0"];
-	var x = Math.random() * 300;
-	var y = Math.random() * 150;
+	var x = Math.random() * 1200;
+	var y = Math.random() * 450;
 	var size = (Math.random() * 100) + 20;
 	var num_circles = (Math.random() * 10) + 2;
 	for (var i = size; i > 0; i-= (size/num_circles)) {
@@ -27,5 +27,9 @@ function draw() {
 }
 draw_init();
 </script> 
+
+       <%= content_for :menu do%>
+       <%= link_to "beta", :controller=>"beta" %>
+       <% end %>
 
  
