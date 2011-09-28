@@ -1,5 +1,5 @@
 class CreatePhotos < ActiveRecord::Migration
-  def self.up
+  def change
     create_table :photos do |t|
       t.column :description, :string
       t.column :content_type, :string
