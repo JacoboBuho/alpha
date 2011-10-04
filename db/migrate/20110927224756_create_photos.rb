@@ -1,5 +1,5 @@
 class CreatePhotos < ActiveRecord::Migration
-  def change
+  def change #esto es un método
     create_table :photos do |t|
       t.column :description, :string
       t.column :content_type, :string

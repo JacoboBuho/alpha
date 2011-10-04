@@ -11,19 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110927224756) do
+ActiveRecord::Schema.define(:version => 20110928165935) do
 
   create_table "photos", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "usuarios", :force => true do |t|
-    t.string   "nombre"
-    t.string   "apellido"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "numero"
-  end
+  
 
 end
